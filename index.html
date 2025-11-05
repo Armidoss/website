@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Armidoss</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js"></script>
+    <script src="canvas.js"></script>
+
+    <div class="profile-card">
+
+        <h1>Radim Koutný</h1>
+        <p class="title">Developer</p>
+        <p class="title2">Cryptography enthusiast</p>
+
+        <a href="https://github.com/Armidoss" class="github-btn" target="_blank">
+            <i class="fab fa-github"></i> Github
+        </a>
+
+        <div class="contact-info">
+
+            <div class="email">
+                Armidoss@proton.me
+            </div>
+
+            <button class="toggle-pgp" id="togglePgpBtn">
+                Show PGP Public Key
+            </button>
+
+            <div class="pgp-key" id="pgpKey">
+                -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+                mQINBGkLxP4BEACppgVxocTrb8AgWMs7CZVN2rzwF+tt0nXMSoDqXopmKIuSkbdU
+                KBgOomNuTLPlXXqpXfN8uKUlb4a8X3QHqWAa9XS1EqHTSe98sHecbkSqZKXsylwm
+                W4duxy6yzR+XvJhQmMurnZDrU2yCOxmAcLudq0gcC+wPPHT03utyCrw+CAK5Pgsd
+                Dv5ZF1JkctvDwbmLb2/ORwlRqwOtRq26D7WaB06MeL3eqsBnwSWq1ECHTqD/hnb0
+                a/f/MwrNcF1Z62jyIIhq/alnjGEiFFHfVekPaFz56OxZ0xnV1Ar8q42Wd4khKwJc
+                RstWYFxkD5YkIzhAx8vauJStttbTJQ/HrqVJ9sqlP1AlF8XQXO9X3uqqfLlgBxz3
+                ag+ccf8mde76MqbWlm83i/NzF9Xu4fP6SwwG4dqauqCdob9gBz8vU9vvYPJu6FQ7
+                6i8jIFmCIrY/EH9FWHKiD/XYINRN121DJBcl00o0P0hesxNh2LUcxoYHCkzyqBNj
+                vYvLw1TH69eLTGOOUoj035817g3sanj+OZ6+uuHEozD/+MrrV/XxfIRuKqY2TTeu
+                +r1ROlnXpl48ymChh27HSh+Zkshsd85Tf7n09TL3Nxg5r55ECMhzktMY7PM5UNol
+                aHp9hVHzBXQ3kJKdDKpUOXdjmhtXbRsmWUncH/q/iegG4Je/ypi/tpID6wARAQAB
+                tCFSYWRpbSBLb3V0bnkgPEFybWlkb3NzQHByb3Rvbi5tZT6JAk4EEwEKADgWIQQL
+                75M8z8SVX6WLQhoaR1rmh29DsgUCaQvE/gIbAwULCQgHAgYVCgkICwIEFgIDAQIe
+                AQIXgAAKCRAaR1rmh29DstBMEACRl1d1XtmMK82XTOjHu+EW8GQHqXxyOtYqvo1y
+                QZyGgcUQCtOl2GifYvyf+E14jRP+dn5bJ0lGH0LfvPQnQ9Pnl2Irxo1Dh1l+uQdO
+                03EEzeuCYvWCKWXx8wtwB++PxnnNl0+eV5pCkMy1QBCqy6wgrH1MFrTZr+t6Ovyr
+                dJnOK0UQ1ejVJruTVTZLZUEYCEIwglTJbdCd4I6clIDdmHeyDAXqMTru8+60l46V
+                /qr7EwmqD7ekj3ZzZPEh51QAlKn6GvN/16UHGpyhck6ufcvoYwQKjFe+LeNLZebJ
+                jawRcUTR9r+2xq6SRzCG8AopcqIdXF5jvtxR2c8nVg40zwguSKFWzSniKQw8LxGF
+                n7zNa+XW1EUfXbxJZ5QN/uuIvcvCLez9YqpTKlrJusSGf2h2Xw89h3Y3CHAykWFA
+                PeqOxS0Sbz9cLjYHFgIgH+NAyj2hlCz4KuyhrZijikNWTY0c7igWnkIM+ELPKrTq
+                2eN3HebwU+u7buwoVRAL5LpfmJYYapesf7bEW6fb6tEQ3Es/M3+mHwF8mjK97mQD
+                W1R7hWLJhzOQ1oLjFVQD2j7YEBLN+h0NbpR5L/3bhTgprmTIfMZ2Z0qe0l+VRF/d
+                +rA6KFrGg+tIPS+CBN6rwLmp5Ynt84sZnjG/U7tjrGnR1o42huUQsM5lNqvK9o4f
+                BQpaHbkCDQRpC8T+ARAAzXicX+bGTSW9h7luO5rBrYtV6cepscaDk0ucRc/JGyp+
+                qpznO+QLgA0LRr/e/dfoliQ/NeH5tNUzT4rOC21ppjSYZUso4M+vRsFV6xydM2Vl
+                rX3QZxZMTOJ3gcSSpYNWu1ThzPB7liQPt/T2nDE3iLZpcz8pEZoa5e9i0I0Mhzz7
+                LFN2UgthjK1RhysL0Nut2nopqmL2bGMr2RU1n+6Il1uS5+fHqwbVJJev6gM94rkN
+                ntD75df4EE8pPR+xGiCPjwAn6b6aztkXreZygjqb2onBrCQMnn6PQgoc6+ugcgLW
+                SvNrEs3N4jhmnU8Sw1bZ1+tINhkPpK/1RpZSm3X94AjAvBUAB3YV3iJdGNU6HVJg
+                H74q5UGyO5yqQ01c/uW3EIPv/GLNBUG60nGKkkOAgVPIsiAlO9RpcsWKJiEC4V5F
+                +0bhyasSIo4HC/O4y4NXAHPmYX12TTJF2pBDQhFX9Qj8yvhPgUswAckt7sfnKXEc
+                +A2zhyy2CX3sSPawhkPK/3NVs0sampwtXEf+RK2nLMcB0JzUPAf9cBwhhcmagO8d
+                P9LVAX39L+Fc0PtqEDarpfatBhQxgs1cCjDGLdFJNLEk4o4AO+XgmONrS7adbSBq
+                bqsu9StztKnFqA8t0GE5uJgSAp9xL9lih4hH4KqP2dUW4lrYl+cMhB6X3rW/DLsA
+                EQEAAYkCNgQYAQoAIBYhBAvvkzzPxJVfpYtCGhpHWuaHb0OyBQJpC8T+AhsMAAoJ
+                EBpHWuaHb0OyUA0P/A4qpUQu3PS6K6k1ksjnc3mRq6z8tA8fCbOFMTZXBKXSo50t
+                jJnCAUXy5aRLVi/k9gxCQ1mkMGBOeSwISXO77LjkxYtBB6qLeN54rvHvQ+JZPdkn
+                jNOq0idIzFp/RrR9OPKYZF1Qnmo9LTzqmC2NDuKH/wzBVmTo0H4b8r9FsCCQPA+7
+                +ZeHH399hm+zAxTyp2HCqtjomFbiK3jwagEZNBY0bdju6maBPTscUs81u+2AMTGO
+                wNs8A+ir7iW6KvOHnfcRX/UOzd/KmWEKxOf+iRAbZ/LZsKjiH2ol7p7dkbLseL9g
+                dTlYmDol1sYu6erOOlMBKeU+t2l2US+t09f+daLCJ/pY+bKo0yls+oXeTP8dozoe
+                PcC215m9k+QZNqC04jTOGVkpJeHh8+QoiQT3Sz18PVZwXRJRN2dwzHPfs4h1Ak3f
+                1rM35VjS6GmWyvyAdEpJIl8wZawMFBns1TRTJGpKMWTz16UdEZq2OuQ/LRcaz+sA
+                EX+4KSBeVrs6ezDpyb+NnRwpeZURIa9qqDQWmJ3uCOCfKA2TjvT72y22H5Nh2a3H
+                hZa2yUCJAhsI8nI0RqjKF5z6xNK3Gn/4uCpO3WwFrZZ+5voa9hCx8PelFiUc+NUv
+                8zqcfTVZVcQsatJkoMwmy48cjpO3H6DuSCWiTNRstxBMmaf6+dqGdG2suXBd
+                =vrq5
+                -----END PGP PUBLIC KEY BLOCK-----
+            </div>
+        </div>
+    </div>
+
+    <script src="pgp.js"></script>
+</body>
+
+</html>
