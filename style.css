@@ -76,6 +76,13 @@ h1 {
     color: #a0d2ff;
 }
 
+.title2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    color: #a0d2ff;
+}
+
 .description {
     font-size: 16px;
     line-height: 1.6;
